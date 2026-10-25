@@ -2,7 +2,7 @@
 
 Frappe v16 app **`erpnext_amazon_business_reconciliation`**: Amazon Business purchase register, draft Purchase Invoice creation, and desk reconciliation for ERPNext.
 
-**Requires:** [`erpnext_amazon_business`](https://github.com/CorpDK/erpnext-amazon-business) (OAuth, storefront master, tokens on core Company Storefront rows). This app does not store LWA credentials.
+**Requires:** Frappe and ERPNext v16 (`>=16`, `<17`), plus [`erpnext_amazon_business`](https://github.com/CorpDK/erpnext-amazon-business) (OAuth, storefront master, tokens on core Company Storefront rows). This app does not store LWA credentials.
 
 ## P0 scope (schema)
 

@@ -6,10 +6,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCTYPE_DIR = (
-	REPO_ROOT
-	/ "erpnext_amazon_business_reconciliation"
-	/ "amazon_business_reconciliation"
-	/ "doctype"
+	REPO_ROOT / "erpnext_amazon_business_reconciliation" / "amazon_business_reconciliation" / "doctype"
 )
 
 EXPECTED_DOCTYPES = {

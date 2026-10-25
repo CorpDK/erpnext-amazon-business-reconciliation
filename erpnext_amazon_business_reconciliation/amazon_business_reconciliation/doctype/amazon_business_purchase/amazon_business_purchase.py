@@ -4,7 +4,7 @@ from frappe.model.document import Document
 
 
 class AmazonBusinessPurchase(Document):
-	"""Schema-only P0 scaffold; business logic ships in P1."""
+	"""P0 schema with idempotency validation; sync and PINV logic ships in P1."""
 
 	def validate(self) -> None:
 		if not (self.company and self.storefront and self.amazon_transaction_id):
@@ -19,8 +19,7 @@ class AmazonBusinessPurchase(Document):
 		if frappe.db.exists("Amazon Business Purchase", filters):
 			frappe.throw(
 				_(
-					"Amazon Business Purchase already exists for company {0}, storefront {1}, "
-					"transaction {2}"
+					"Amazon Business Purchase already exists for company {0}, storefront {1}, transaction {2}"
 				).format(self.company, self.storefront, self.amazon_transaction_id),
 				frappe.UniqueValidationError,
 			)

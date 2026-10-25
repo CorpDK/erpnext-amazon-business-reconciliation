@@ -8,8 +8,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 HOOKS_PATH = REPO_ROOT / "erpnext_amazon_business_reconciliation" / "hooks.py"
 SCHEDULER_SYNC_STUB = (
-	"erpnext_amazon_business_reconciliation.amazon_business_reconciliation.tasks.sync"
-	".scheduled_sync_stub"
+	"erpnext_amazon_business_reconciliation.amazon_business_reconciliation.tasks.sync.scheduled_sync_stub"
 )
 
 
