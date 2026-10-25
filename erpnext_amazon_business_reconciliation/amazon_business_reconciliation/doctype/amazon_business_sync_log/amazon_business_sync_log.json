@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-10-25 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "storefront",
+  "source",
+  "status",
+  "feed_start",
+  "feed_end",
+  "transactions_seen",
+  "transactions_upserted",
+  "pdf_fetched",
+  "pdf_failed",
+  "error_message",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "storefront",
+   "fieldtype": "Link",
+   "label": "Storefront",
+   "options": "Amazon Business Storefront",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "scheduled\nmanual\nanalytics\nwebhook"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Success\nPartial\nFailed"
+  },
+  {
+   "fieldname": "feed_start",
+   "fieldtype": "Datetime",
+   "label": "Feed Start"
+  },
+  {
+   "fieldname": "feed_end",
+   "fieldtype": "Datetime",
+   "label": "Feed End"
+  },
+  {
+   "fieldname": "transactions_seen",
+   "fieldtype": "Int",
+   "label": "Transactions Seen"
+  },
+  {
+   "fieldname": "transactions_upserted",
+   "fieldtype": "Int",
+   "label": "Transactions Upserted"
+  },
+  {
+   "fieldname": "pdf_fetched",
+   "fieldtype": "Int",
+   "label": "PDF Fetched"
+  },
+  {
+   "fieldname": "pdf_failed",
+   "fieldtype": "Int",
+   "label": "PDF Failed"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Small Text",
+   "label": "Error Message"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "JSON",
+   "label": "Details"
+  }
+ ],
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Sync Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 0,
+   "write": 0
+  }
+ ]
+}

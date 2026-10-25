@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2026-10-25 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shipment_id",
+  "carrier",
+  "tracking_id",
+  "status",
+  "last_event_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipment_id",
+   "fieldtype": "Data",
+   "label": "Shipment ID"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Data",
+   "label": "Carrier"
+  },
+  {
+   "fieldname": "tracking_id",
+   "fieldtype": "Data",
+   "label": "Tracking ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "last_event_at",
+   "fieldtype": "Datetime",
+   "label": "Last Event At"
+  }
+ ],
+ "istable": 1,
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Purchase Shipment",
+ "owner": "Administrator",
+ "permissions": []
+}
