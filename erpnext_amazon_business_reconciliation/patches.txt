@@ -1,2 +1,4 @@
 [pre_model_sync]
 erpnext_amazon_business_reconciliation.patches.check_version_compatibility
+
+[post_model_sync]
