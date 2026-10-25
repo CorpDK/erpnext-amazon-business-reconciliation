@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-10-25 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "drive_section",
+  "store_invoices_in_drive",
+  "drive_team",
+  "drive_folder_mode",
+  "drive_custom_root",
+  "drive_create_missing_folders",
+  "phase_section",
+  "enable_p1",
+  "enable_p2",
+  "enable_p3",
+  "enable_p4",
+  "sync_section",
+  "sync_lookback_days",
+  "sync_schedule",
+  "sync_cron_hour",
+  "document_poll_max_minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "drive_section",
+   "fieldtype": "Section Break",
+   "label": "Drive"
+  },
+  {
+   "default": "1",
+   "fieldname": "store_invoices_in_drive",
+   "fieldtype": "Check",
+   "label": "Store Invoices In Drive"
+  },
+  {
+   "fieldname": "drive_team",
+   "fieldtype": "Link",
+   "label": "Drive Team",
+   "options": "Drive Team"
+  },
+  {
+   "default": "Purchases layout",
+   "fieldname": "drive_folder_mode",
+   "fieldtype": "Select",
+   "label": "Drive Folder Mode",
+   "options": "Purchases layout\nCustom root"
+  },
+  {
+   "fieldname": "drive_custom_root",
+   "fieldtype": "Link",
+   "label": "Drive Custom Root",
+   "options": "Drive File"
+  },
+  {
+   "default": "1",
+   "fieldname": "drive_create_missing_folders",
+   "fieldtype": "Check",
+   "label": "Drive Create Missing Folders"
+  },
+  {
+   "fieldname": "phase_section",
+   "fieldtype": "Section Break",
+   "label": "Phases"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_p1",
+   "fieldtype": "Check",
+   "label": "Enable P1"
+  },
+  {
+   "fieldname": "enable_p2",
+   "fieldtype": "Check",
+   "label": "Enable P2"
+  },
+  {
+   "fieldname": "enable_p3",
+   "fieldtype": "Check",
+   "label": "Enable P3"
+  },
+  {
+   "fieldname": "enable_p4",
+   "fieldtype": "Check",
+   "label": "Enable P4"
+  },
+  {
+   "fieldname": "sync_section",
+   "fieldtype": "Section Break",
+   "label": "Sync"
+  },
+  {
+   "default": "30",
+   "fieldname": "sync_lookback_days",
+   "fieldtype": "Int",
+   "label": "Sync Lookback Days"
+  },
+  {
+   "default": "Daily",
+   "fieldname": "sync_schedule",
+   "fieldtype": "Select",
+   "label": "Sync Schedule",
+   "options": "Daily"
+  },
+  {
+   "default": "2",
+   "fieldname": "sync_cron_hour",
+   "fieldtype": "Int",
+   "label": "Sync Cron Hour"
+  },
+  {
+   "default": "15",
+   "fieldname": "document_poll_max_minutes",
+   "fieldtype": "Int",
+   "label": "Document Poll Max Minutes"
+  }
+ ],
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Reconciliation Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 0,
+   "write": 0
+  }
+ ],
+ "issingle": 1
+}

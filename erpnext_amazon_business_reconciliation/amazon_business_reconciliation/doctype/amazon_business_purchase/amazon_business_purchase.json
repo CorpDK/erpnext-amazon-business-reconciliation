@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-10-25 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "storefront",
+  "amazon_transaction_id",
+  "amazon_order_id",
+  "marketplace_id",
+  "order_date",
+  "transaction_type",
+  "payment_method",
+  "currency",
+  "grand_total",
+  "tax_total",
+  "sold_by_supplier_name",
+  "sold_by_gstin",
+  "is_amazon_fulfilled",
+  "amazon_invoice_number",
+  "document_status",
+  "purchase_invoice",
+  "billing_status",
+  "exclude_reason",
+  "amazon_business_purchase_request",
+  "procurement_status",
+  "amazon_payload",
+  "items_section",
+  "items",
+  "shipments_section",
+  "shipments"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "storefront",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Storefront",
+   "options": "Amazon Business Storefront",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amazon_transaction_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amazon Transaction ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amazon_order_id",
+   "fieldtype": "Data",
+   "label": "Amazon Order ID"
+  },
+  {
+   "fieldname": "marketplace_id",
+   "fieldtype": "Data",
+   "label": "Marketplace ID"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Data",
+   "label": "Transaction Type"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "label": "Payment Method"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "tax_total",
+   "fieldtype": "Currency",
+   "label": "Tax Total"
+  },
+  {
+   "fieldname": "sold_by_supplier_name",
+   "fieldtype": "Data",
+   "label": "Sold By Supplier Name"
+  },
+  {
+   "fieldname": "sold_by_gstin",
+   "fieldtype": "Data",
+   "label": "Sold By GSTIN"
+  },
+  {
+   "fieldname": "is_amazon_fulfilled",
+   "fieldtype": "Check",
+   "label": "Is Amazon Fulfilled"
+  },
+  {
+   "fieldname": "amazon_invoice_number",
+   "fieldtype": "Data",
+   "label": "Amazon Invoice Number"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "document_status",
+   "fieldtype": "Select",
+   "label": "Document Status",
+   "options": "Pending\nProcessing\nFetched\nFailed"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice",
+   "read_only": 1
+  },
+  {
+   "default": "Unbilled",
+   "fieldname": "billing_status",
+   "fieldtype": "Select",
+   "label": "Billing Status",
+   "options": "Unbilled\nPINV Draft\nPINV Submitted\nReconciled\nExcluded"
+  },
+  {
+   "fieldname": "exclude_reason",
+   "fieldtype": "Small Text",
+   "label": "Exclude Reason"
+  },
+  {
+   "fieldname": "amazon_business_purchase_request",
+   "fieldtype": "Link",
+   "label": "Amazon Business Purchase Request",
+   "options": "Amazon Business Purchase Request"
+  },
+  {
+   "default": "Normal",
+   "fieldname": "procurement_status",
+   "fieldtype": "Select",
+   "label": "Procurement Status",
+   "options": "Normal\nRogue spend"
+  },
+  {
+   "fieldname": "amazon_payload",
+   "fieldtype": "JSON",
+   "label": "Amazon Payload"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Amazon Business Purchase Item"
+  },
+  {
+   "fieldname": "shipments_section",
+   "fieldtype": "Section Break",
+   "label": "Shipments"
+  },
+  {
+   "fieldname": "shipments",
+   "fieldtype": "Table",
+   "label": "Shipments",
+   "options": "Amazon Business Purchase Shipment"
+  }
+ ],
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Purchase",
+ "owner": "Administrator",
+ "indexes": [
+  {
+   "fields": [
+    "company",
+    "storefront",
+    "amazon_transaction_id"
+   ],
+   "unique": 1
+  }
+ ],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 0,
+   "write": 0
+  }
+ ],
+ "naming_series": "ABP-.#####"
+}

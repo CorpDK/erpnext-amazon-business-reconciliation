@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-10-25 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "indexes": [
+  {
+   "fields": [
+    "company",
+    "storefront"
+   ],
+   "unique": 1
+  }
+ ],
+ "field_order": [
+  "company",
+  "storefront",
+  "enabled",
+  "last_sync_at",
+  "next_page_token",
+  "feed_cursor",
+  "relay_events_cursor"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "storefront",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Storefront",
+   "options": "Amazon Business Storefront",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Include In Scheduled Sync"
+  },
+  {
+   "fieldname": "last_sync_at",
+   "fieldtype": "Datetime",
+   "label": "Last Sync At"
+  },
+  {
+   "fieldname": "next_page_token",
+   "fieldtype": "Data",
+   "label": "Next Page Token"
+  },
+  {
+   "fieldname": "feed_cursor",
+   "fieldtype": "Data",
+   "label": "Feed Cursor"
+  },
+  {
+   "fieldname": "relay_events_cursor",
+   "fieldtype": "Data",
+   "label": "Relay Events Cursor"
+  }
+ ],
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Storefront Sync State",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 0,
+   "write": 0
+  }
+ ],
+ "title_field": "storefront"
+}

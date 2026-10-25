@@ -1,0 +1,53 @@
+# CorpDK documentation manifest stub (P0-A2). Not site_config or bench config.
+version: 1
+app:
+  name: "Amazon Business Reconciliation"
+  repository: "CorpDK/erpnext-amazon-business-reconciliation"
+  owner: "CorpDK"
+  ownerStatus: "active"
+  status: draft
+  lastVerified: "2026-10-25"
+  license: "GPL-3.0-or-later"
+  frappeAppName: erpnext_amazon_business_reconciliation
+  publicationTargets:
+    - frappe_marketplace
+  sourcePaths:
+    - README.md
+    - erpnext_amazon_business_reconciliation/
+    - docs/
+    - pyproject.toml
+
+defaultVisibility: public
+
+documentationStatus:
+  summary: >
+    Frappe v16 reconciliation app: Amazon Business purchase register, draft PINV,
+    and desk reconciliation. Requires erpnext_amazon_business (OAuth, storefront master).
+  designReferences:
+    - "CorpDK/ERP docs/amazon-business-app-design.md (private monorepo)"
+    - "CorpDK/ERP docs/amazon-business-api-mapping.md"
+    - "CorpDK/ERP docs/amazon-business-implementation-plan.md"
+
+areas:
+  readme:
+    status: planned
+    path: README.md
+    visibility: public
+    audience:
+      - installers
+    source: README.md
+
+  docsIndex:
+    status: planned
+    path: docs/README.md
+    visibility: public
+    audience:
+      - installers
+    source: docs/README.md
+
+bench:
+  frappe_version: ">=16,<17"
+  erpnext_version: ">=16,<17"
+  required_apps:
+    - erpnext
+    - erpnext_amazon_business

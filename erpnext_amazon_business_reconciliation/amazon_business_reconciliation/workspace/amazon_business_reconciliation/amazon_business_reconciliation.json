@@ -1,0 +1,129 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"abrHdr01\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Amazon Business Reconciliation</b></span>\",\"col\":12}},{\"id\":\"abrSp01\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2026-10-25 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Amazon Business Reconciliation",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configuration",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business Reconciliation Settings",
+   "link_count": 0,
+   "link_to": "Amazon Business Reconciliation Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business Company Books Config",
+   "link_count": 0,
+   "link_to": "Amazon Business Company Books Config",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business Purchase",
+   "link_count": 0,
+   "link_to": "Amazon Business Purchase",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business Sync Log",
+   "link_count": 0,
+   "link_to": "Amazon Business Sync Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business Reconciliation Log",
+   "link_count": 0,
+   "link_to": "Amazon Business Reconciliation Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Core",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Amazon Business (Connect)",
+   "link_count": 0,
+   "link_to": "Amazon Business",
+   "link_type": "Workspace",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-25 00:00:00.000000",
+ "module": "Amazon Business Reconciliation",
+ "name": "Amazon Business Reconciliation",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Reconciliation Settings",
+   "link_to": "Amazon Business Reconciliation Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Amazon Business Purchase",
+   "link_to": "Amazon Business Purchase",
+   "type": "DocType"
+  }
+ ],
+ "title": "Amazon Business Reconciliation"
+}
