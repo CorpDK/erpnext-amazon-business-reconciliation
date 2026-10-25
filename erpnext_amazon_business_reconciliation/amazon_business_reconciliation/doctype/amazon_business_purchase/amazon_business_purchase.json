@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "company",
   "storefront",
   "amazon_transaction_id",
@@ -35,6 +36,15 @@
   "shipments"
  ],
  "fields": [
+  {
+   "default": "ABP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ABP-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
   {
    "fieldname": "company",
    "fieldtype": "Link",
@@ -237,6 +247,5 @@
    "share": 0,
    "write": 0
   }
- ],
- "naming_series": "ABP-.#####"
+ ]
 }
